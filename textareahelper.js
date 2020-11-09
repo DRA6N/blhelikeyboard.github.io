@@ -3,12 +3,18 @@
 function updateTextarea(note, octave) {
 
     var textarea = document.getElementById("textoutput");
-    textarea.value = textarea.value + note + octave + " 4 ";
+    textarea.value = textarea.value + note + octave + " 4 ";    
 
 }
 function removeNote() {
 
     var textarea = document.getElementById("textoutput");
-    textarea.value = textarea.value.substring(0, textarea.value.length - 5);
+
+    if (textarea.value.substring(textarea.value.length - 5, textarea.value.length - 4) == '#') {
+        textarea.value = textarea.value.substring(0, textarea.value.length - 6);
+    }
+    else {
+        textarea.value = textarea.value.substring(0, textarea.value.length - 5);
+    }
 
 }
