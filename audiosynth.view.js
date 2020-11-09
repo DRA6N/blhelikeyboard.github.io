@@ -5,7 +5,7 @@ function AudioSynthView() {
 
 	var __audioSynth = new AudioSynth();
 	__audioSynth.setVolume(0.5);
-	var __octave = 4;
+	var __octave = 5;
 	
 	// Change octave
 	var fnChangeOctave = function(x) {
@@ -14,7 +14,7 @@ function AudioSynthView() {
 	
 		__octave += x;
 	
-		__octave = Math.min(5, Math.max(3, __octave));
+		__octave = Math.min(6, Math.max(4, __octave));
 	
 		var octaveName = document.getElementsByName('OCTAVE_LABEL');
 		var i = octaveName.length;
