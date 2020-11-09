@@ -252,7 +252,7 @@ function AudioSynthView() {
 	// Detect keypresses, play notes.
 
 	var fnPlayKeyboard = function(e) {
-	
+
 		var i = keysPressed.length;
 		while(i--) {
 			if(keysPressed[i]==e.keyCode) {
@@ -323,6 +323,8 @@ function AudioSynthView() {
 			var arrPlayNote = keyboard[e.keyCode].split(',');
 			var note = arrPlayNote[0];
 			var octaveModifier = arrPlayNote[1]|0;
+
+			updateTextarea(note,__octave + octaveModifier);
 			fnPlayNote(note, __octave + octaveModifier);
 		} else {
 			return false;	

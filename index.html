@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <head>
 <link rel="stylesheet" href="style.css">
+<script src="textareahelper.js"></script>
 <script src="audiosynth.js"></script>
 <script src="audiosynth.view.js"></script>
 </head>
@@ -49,7 +50,7 @@ a.draw();
 <div>
 <textarea class="scrollabletextbox" value="" id="textoutput">
 </textarea><br>
-<button>Delete Last Note</button><input type="button" id="copyID" value="Copy to Clipboard" />
+<button onclick="removeNote()">Delete Last Note</button><input type="button" id="copyID" value="Copy to Clipboard" />
     <script type="text/javascript">
         var button = document.getElementById("copyID"),
             input = document.getElementById("textoutput");
