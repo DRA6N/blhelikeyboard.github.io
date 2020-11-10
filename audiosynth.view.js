@@ -263,7 +263,7 @@ function AudioSynthView() {
 		
 		switch(e.keyCode) {
 
-			// delete
+			// delete notes
 			case 27:
 				removeNote();
 				break;
