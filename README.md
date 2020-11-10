@@ -172,16 +172,16 @@ Project Link: [https://github.com/DRA6N/blhelikeyboard.github.io](https://github
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
-[contributors-url]: https://github.com/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
-[forks-url]: https://github.com/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io/network/members
-[stars-shield]: https://img.shields.io/github/stars/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
-[stars-url]: https://github.com/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io/stargazers
-[issues-shield]: https://img.shields.io/github/issues/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
-[issues-url]: https://github.com/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io/issues
-[license-shield]: https://img.shields.io/github/license/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
-[license-url]: https://github.com/DRA6N/https://github.com/DRA6N/blhelikeyboard.github.io/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
+[contributors-url]: https://github.com/DRA6N/blhelikeyboard.github.io/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
+[forks-url]: https://github.com/DRA6N/blhelikeyboard.github.io/network/members
+[stars-shield]: https://img.shields.io/github/stars/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
+[stars-url]: https://github.com/DRA6N/blhelikeyboard.github.io/stargazers
+[issues-shield]: https://img.shields.io/github/issues/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
+[issues-url]: https://github.com/DRA6N/blhelikeyboard.github.io/issues
+[license-shield]: https://img.shields.io/github/license/DRA6N/blhelikeyboard.github.io.svg?style=flat-square
+[license-url]: https://github.com/DRA6N/blhelikeyboard.github.io/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/DRA6N
 [product-screenshot]: images/screenshot.png
