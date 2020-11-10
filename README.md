@@ -113,7 +113,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-TODO: add discord link
+Main Developer (Discord Link):
+<a href=https://discordapp.com/users/153850946127003648/>Vishera</a>
+
+Co-Developer (Discord Link):
+<a href="https://discordapp.com/users/132817887663620096/">CheetahFPV</a>
 
 Project Link: [https://github.com/DRA6N/blhelikeyboard.github.io](https://github.com/DRA6N/blhelikeyboard.github.io)
 
