@@ -34,7 +34,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/DRA6N/blhelikeyboard.github.io">
-    <img src="https://oscarliang.com/ctt/uploads/2017/06/check-blheli32-esc-blhelisuite32-configurator.jpg" alt="Logo" width="220" height="160">
+    <img src="https://cdn.discordapp.com/attachments/513032175130771459/775714484366868510/chrome_2020-11-10_14-31-43.png" alt="Logo" width="500" height="350">
   </a>
 
   <h3 align="center">BlHeli Keyboard</h3>
