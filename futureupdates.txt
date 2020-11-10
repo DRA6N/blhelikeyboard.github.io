@@ -1,6 +1,0 @@
-Future update ideas:
-
-• Playback option
-• add pauses and tone length keys
-• user-defined sample rate - current sample rate is 44100Hz but can be as low as 4000 (keep in mind lower sample rates may result in a poorer quality sound)
-• Ability to turn OFF the output to the text box
