@@ -34,7 +34,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/DRA6N/blhelikeyboard.github.io">
-    <img src="https://oscarliang.com/ctt/uploads/2017/06/check-blheli32-esc-blhelisuite32-configurator.jpg" alt="Logo" width="80" height="80">
+    <img src="https://oscarliang.com/ctt/uploads/2017/06/check-blheli32-esc-blhelisuite32-configurator.jpg" alt="Logo" width="220" height="160">
   </a>
 
   <h3 align="center">BlHeli Keyboard</h3>
@@ -42,11 +42,8 @@
   <p align="center">
     An online music generator for BlHeli_32 ESC's
     <br />
-    <a href="https://github.com/DRA6N/blhelikeyboard.github.io"><strong>Explore the docs »</strong></a>
+    <a href="https://dra6n.github.io/blhelikeyboard.github.io/"><strong>Try it out! »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/DRA6N/blhelikeyboard.github.io">View Demo</a>
-    ·
     <a href="https://github.com/DRA6N/blhelikeyboard.github.io/issues">Report Bug</a>
     ·
     <a href="https://github.com/DRA6N/blhelikeyboard.github.io/issues">Request Feature</a>
@@ -61,9 +58,6 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -71,58 +65,16 @@
 * [Acknowledgements](#acknowledgements)
 
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`DRA6N`, `blhelikeyboard.github.io`, `twitter_handle`, `email`
-
-
 ### Built With
 
-* []()
-* []()
-* []()
-
+* [](JavaScript)
+* [](AudioSynth.js)
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
-
-1. Clone the repo
-```sh
-git clone https://github.com/DRA6N/blhelikeyboard.github.io.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+Follow the guide on the website!
 
 
 <!-- ROADMAP -->
@@ -154,6 +106,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
+
+TODO: add discord link
 
 Project Link: [https://github.com/DRA6N/blhelikeyboard.github.io](https://github.com/DRA6N/blhelikeyboard.github.io)
 
