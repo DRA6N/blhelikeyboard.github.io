@@ -58,7 +58,7 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-* [Requesting Features](#request-feature)
+* [Requesting Features](#requesting-features)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -81,7 +81,7 @@ Follow the guide on the website!
 
 If you need a feature right on the spot now please create a fork of this project and help us make your idea a reality and make this project evolve quicker!
 
-Nontheless to request a feature, please head over to <a href="https://github.com/DRA6N/blhelikeyboard.github.io/issues">Issues & Feature Requests</a> and create an issue labeled "[FEATURE REQUEST] Quick description" and write a very detailed description and we might develop on it if we think it suits the project.
+Nontheless to request a feature, please head over to <a href="https://github.com/DRA6N/blhelikeyboard.github.io/issues">Issues & Feature Requests</a> and create an issue labeled: "[FEATURE REQUEST] Quick description" and write a very detailed description and we might develop on it if we think it suits the project.
 
 <!-- ROADMAP -->
 ## Roadmap
