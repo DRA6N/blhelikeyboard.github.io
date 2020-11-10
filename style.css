@@ -53,3 +53,37 @@ body { font-family: Verdana; color: rgb(32,32,32); padding: 10px;
 
 #textoutput { height:200px; width:500px; text-align:left; overflow:scroll; font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;}
 }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
