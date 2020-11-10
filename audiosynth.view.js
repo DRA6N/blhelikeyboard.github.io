@@ -260,9 +260,14 @@ function AudioSynthView() {
 			}
 		}
 		keysPressed.push(e.keyCode);
-	
-		switch(e.keyCode) {
 		
+		switch(e.keyCode) {
+
+			// delete
+			case 27:
+				removeNote();
+				break;
+
 			// left
 			case 37:
 				fnChangeOctave(-1);
