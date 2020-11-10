@@ -273,7 +273,6 @@ function AudioSynthView() {
 			case 8:
 				removeNote();
 				break;
-
 			// left
 			case 37:
 				fnChangeOctave(-1);
