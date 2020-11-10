@@ -58,17 +58,17 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
+* [Requesting Features](#request-feature)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 
 ### Built With
 
-* [](JavaScript)
-* [](AudioSynth.js)
+* []()JavaScript
+* []()AudioSynth.js
 
 
 <!-- GETTING STARTED -->
@@ -76,6 +76,12 @@
 
 Follow the guide on the website!
 
+<!-- REQUESTING FEATURES -->
+## Requesting Features
+
+If you need a feature right on the spot now please create a fork of this project and help us make your idea a reality and make this project evolve quicker!
+
+Nontheless to request a feature, please head over to <a href="https://github.com/DRA6N/blhelikeyboard.github.io/issues">Issues & Feature Requests</a> and create an issue labeled "[FEATURE REQUEST] Quick description" and write a very detailed description and we might develop on it if we think it suits the project.
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -110,15 +116,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 TODO: add discord link
 
 Project Link: [https://github.com/DRA6N/blhelikeyboard.github.io](https://github.com/DRA6N/blhelikeyboard.github.io)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
 
 
 
