@@ -334,7 +334,7 @@ function AudioSynthView() {
 			var note = arrPlayNote[0];
 			var octaveModifier = arrPlayNote[1]|0;
 
-			updateTextarea(note,__octave + octaveModifier);
+			playAndSave(note,__octave + octaveModifier);
 			fnPlayNote(note, __octave + octaveModifier);
 		} else {
 			return false;	
