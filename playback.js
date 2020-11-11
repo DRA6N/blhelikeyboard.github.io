@@ -8,7 +8,7 @@ function doPlayback(start) {
 
         AudioSynth.prototype.play("piano", playedNotes[start].note, playedNotes[start].octave, playedNotes.duration)
 
-        sleep(playedNotes[start].duration * 500).then(() => {
+        sleep(playedNotes[start].duration * 100).then(() => {
             doPlayback(start + 1)
         });
     }
