@@ -9,9 +9,6 @@ var noteObj = {
 
 function updateTextarea() {
 
-    //var textarea = document.getElementById("textoutput");
-    //textarea.value = textarea.value + note + octave + " 4 ";    
-
     var textarea = document.getElementById("textoutput");
     textarea.value = "";
 
@@ -35,16 +32,7 @@ function playAndSave(note, octave) {
 
 function removeNote() {
 
-    //var textarea = document.getElementById("textoutput");
-
     playedNotes.pop();
     updateTextarea();
 
-    /*if (textarea.value.substring(textarea.value.length - 5, textarea.value.length - 4) == '#') {
-        textarea.value = textarea.value.substring(0, textarea.value.length - 6);
-    }
-    else {
-        textarea.value = textarea.value.substring(0, textarea.value.length - 5);
-    }
-    */
 }
