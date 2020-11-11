@@ -36,3 +36,8 @@ function removeNote() {
     updateTextarea();
 
 }
+
+function clearPlayedNotes() {
+    playedNotes = [];
+    updateTextarea();
+}
