@@ -1,3 +1,6 @@
+include('playback.js');
+include ('textareahelper.js');
+
 function AudioSynthView() {
 
 	var isMobile = !!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
@@ -25,10 +28,6 @@ function AudioSynthView() {
 	
 		document.getElementById('OCTAVE_LOWER').innerHTML = __octave-1;
 		document.getElementById('OCTAVE_UPPER').innerHTML = __octave+1;
-		
-		document.getElementById('notesPlayed').innerHTML='';
-		document.getElementById('notesPlayedhidden').innerHTML='';
-		document.getElementById('playback').disabled=true;
 	
 	};
 
@@ -254,7 +253,7 @@ function AudioSynthView() {
 	};
 
 	// Detect keypresses, play notes.
-
+	
 	var fnPlayKeyboard = function(e) {
 
 		var i = keysPressed.length;
@@ -267,10 +266,15 @@ function AudioSynthView() {
 		
 		switch(e.keyCode) {
 
-			// delete notes
-			case 27:
-				removeNote();
+			//playback with enter key
+			case 13:
+				doPlayback(0);
 				break;
+			// clear all played notes
+			case 27:
+				clearPlayedNotes();
+				break;
+			// delete notes
 			case 46:
 				removeNote();
 				break;
@@ -338,18 +342,8 @@ function AudioSynthView() {
 			var note = arrPlayNote[0];
 			var octaveModifier = arrPlayNote[1]|0;
 
-			updateTextarea(note,__octave + octaveModifier);
+			playAndSave(note,__octave + octaveModifier);
 			fnPlayNote(note, __octave + octaveModifier);
-			document.getElementById('playback').disabled=false;
-			document.getElementById('clear').disabled=false;
-			if (document.getElementById('notesPlayed').innerHTML!=''){
-			    document.getElementById('notesPlayed').innerHTML+=' ';
-			}
-            if (document.getElementById('notesPlayedhidden').innerHTML!=''){
-			    document.getElementById('notesPlayedhidden').innerHTML+=' ';
-			}
-			document.getElementById('notesPlayed').innerHTML+=note + (__octave + octaveModifier);
-			document.getElementById('notesPlayedhidden').innerHTML+=keyboard[e.keyCode];
 		} else {
 			return false;	
 		}
@@ -395,60 +389,12 @@ function AudioSynthView() {
 	
 	};
 
-	var playback=function p(){
-        document.getElementById('playback').disabled=true;
-        // document.getElementById('clear').disabled=true
-        var i = 1;
-        var noteslist=document.getElementById('notesPlayed').innerHTML;
-        var list=document.getElementById('notesPlayedhidden').innerHTML.split(' ');
-        var listvisible=document.getElementById('notesPlayed').innerHTML.split(' ');
-
-        index=0;
-        (function myLoop (i) {
-           setTimeout(function () {
-                if (index<list.length){
-                  var arrPlayNote = list[index].split(',');
-                  var note = arrPlayNote[0];
-			      var octaveModifier = arrPlayNote[1]|0;
-			      fnPlayNote(note, __octave + octaveModifier,0);
-			      document.getElementById('KEY_'+list[index]).style.backgroundColor='red';
-			      document.getElementById('notesPlayed').innerHTML=noteslist.replace(listvisible[index],'<font color="red">'+listvisible[index]+'</font>')
-			      if (index>0){
-			        document.getElementById('KEY_'+list[index-1]).style.backgroundColor='';
-			      }
-		          index++;
-                  if (--i)
-                    { myLoop(i)};      //  decrement i and call myLoop again if i > 0
-                  }
-                  else{
-                    document.getElementById('KEY_'+list[index-1]).style.backgroundColor='';
-                    document.getElementById('playback').disabled=false;
-                    // document.getElementById('clear').disabled=false;
-                    document.getElementById('notesPlayed').innerHTML=noteslist;
-                  }
-               }, 1000)
-        })(list.length+1);
-
-        if (index==list.length){
-         document.getElementById('KEY_'+list[index-1]).style.backgroundColor='';
-        }
-    }
-
-    var clearplayback=function c(){
-        document.getElementById('notesPlayed').innerHTML='';
-        document.getElementById('notesPlayedhidden').innerHTML='';
-        document.getElementById('playback').disabled=true;
-        document.getElementById('clear').disabled=true;
-    }
-	
 	// Set up global event listeners
 
 	window.addEventListener('keydown', fnPlayKeyboard);
 	window.addEventListener('keyup', fnRemoveKeyBinding);
 	document.getElementById('-_OCTAVE').addEventListener('click', function() { fnChangeOctave(-1); });
 	document.getElementById('+_OCTAVE').addEventListener('click', function() { fnChangeOctave(1); });
-	document.getElementById('playback').addEventListener('click', function() { playback(); });
-	//document.getElementById('clear').addEventListener('click', function() { clearplayback(); });
 	
 	Object.defineProperty(this, 'draw', {
 		value: fnCreateKeyboard

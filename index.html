@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
+
 <head>
 <link rel="stylesheet" href="style.css">
 <script src="textareahelper.js"></script>
 <script src="audiosynth.js"></script>
 <script src="audiosynth.view.js"></script>
+<script src="playback.js"></script>
+<title>BLHeli32 Keyboard</title>
 </head>
 
-<body>
-<div class="title">BLHeli32 ESC Tone Tool</div>
-<center><H2>How to use this tool</H2>
-<p>Simply use your PC keyboard to play the tune you'd like. <br>
-  As you play, the app will type the BLHELI32 code in the textbox below. You can delete your last note with <strong>ESC/DEL/BACKSPACE.</strong><br>
-  Copy/Paste into your desired ESC. </p>
-<p><em>Pauses and Tone Length will have to be manually set.</em><br>
-</p>
-</center>
+<body><center>
+
+<div class="title"><img src="img/logo.png">
+  <div class="btn btn-primary tooltip"><img src="img/info.png" width="20px">
+    <div class="bottom">
+        <h3>How to use this tool</h3>
+        <p>Simply use your PC keyboard to play the tune you'd like.<br><br>        
+As you play, the app will type the BLHELI32 code in the textbox below.<br><br>
+<u>Key Bindings:</u><br>
+<b>ESC</b> - Clear all notes<br>
+<b>DEL/BACKSPACE</b> - Delete Last Note<br>
+<b>ENTER</b> - Play Back Notes<br>
+<b>Left/Right Arrow</b> - Octave Down/Up</p>
+        <i></i>
+    </div>
+</div>
+</div>
+<center>
+
+<center>
+<img src="img/bar2.png"><br>
 <div class="keyboard-options">
 <p>Instrument
   <select ID="sound">
@@ -52,8 +66,8 @@ a.draw();
 
 <div>
 <textarea class="scrollabletextbox" value="" id="textoutput">
-</textarea><br><button id='playback' disabled class="playbutton">4</button><br><div id="notesPlayed" class="notesPlayed"></div><div id="notesPlayedhidden" style="display:none"></div><br>
-<button onclick="removeNote()">Delete Last Note</button><input type="button" id="copyID" value="Copy to Clipboard" />
+</textarea><br>
+<button onclick="removeNote()">Delete Last Note</button>&nbsp;<input type="button" id="copyID" value="Copy to Clipboard" />
     <script type="text/javascript">
         var button = document.getElementById("copyID"),
             input = document.getElementById("textoutput");
@@ -65,9 +79,11 @@ a.draw();
         });
     </script>
 
-<button onclick="document.getElementById('textoutput').value = ''">Clear</button>
+<button onclick="clearPlayedNotes()">Clear</button>
+<button onclick="doPlayback(0)">Play it back!</button>
 </div>
   <br><br>
+  <img src="img/bar2.png">
   <H2>Documentation</H2>
   <p>The Music Note format is [Note][Octave] [Length]</p>
   <p>Valid Music Notes are: C, C#(Db), D, D#(Eb), E, F, F#(Gb), G, G#(Ab), A, A#(Bb), B
