@@ -1,3 +1,6 @@
+include('playback.js');
+include ('textareahelper.js');
+
 function AudioSynthView() {
 
 	var isMobile = !!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
@@ -250,7 +253,7 @@ function AudioSynthView() {
 	};
 
 	// Detect keypresses, play notes.
-
+	
 	var fnPlayKeyboard = function(e) {
 
 		var i = keysPressed.length;
@@ -263,10 +266,15 @@ function AudioSynthView() {
 		
 		switch(e.keyCode) {
 
-			// delete notes
-			case 27:
-				removeNote();
+			//playback with enter key
+			case 13:
+				doPlayback(0);
 				break;
+			// clear all played notes
+			case 27:
+				clearPlayedNotes();
+				break;
+			// delete notes
 			case 46:
 				removeNote();
 				break;
